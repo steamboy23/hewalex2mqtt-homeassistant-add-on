@@ -6,6 +6,7 @@
   "url": "https://github.com/johanmeijer/grott",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
+  "init": false
   "boot": "auto",
   "ports" :{
 	"5279/tcp": 5279
@@ -14,7 +15,7 @@
 	"gmode": "proxy",
 	"gnomqtt": "False",
 	"gmqttip": "127.0.0.1",
-	"gmqttport": "5288",
+	"gmqttport": "1883",
 	"gmqttauth": "False",
 	"gmqtttopic": "energy/grott",
 	"gmqttuser": "user",
