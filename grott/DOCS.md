@@ -1,20 +1,18 @@
-# Home Assistant Add-on: Grott - The Growatt inverter monitor
+# Home Assistant Add-on: Hewalex2MQTT
 
-## Installation
+Hewalex devices are equipped with empty RS485 connectors. This is basically a serial port. This script uses a 'serial for url' connection.
 
-Follow these steps to get the add-on installed on your system:
+You can buy a (cheap) wifi 2 rs485 or ethernet 2 rs485 device wich you attach to the rs485 port you want to interface with. And you need a piece of wire with 4 strands.
+Heat pumps (PCWU) setup
 
-1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.
-2. Find the "Grott" add-on and click it.
-3. Click on the "INSTALL" button.
+Remove the plastic case and open up the "fuse box". In here you will find a free rs485 connector. Remove it and screw in a 4 strand wire. Connect the wire to the rs485wifi device. Make sure you connect them correctly. It is wise to measure ac and grnd to be sure!
 
-## How to use
+In the controller, navigate to rs485 settings. Change baud rate to 38500, Actual address to 2 and Logic address to 2.
 
-The add-on has a couple of options available. To get the add-on running:
+Setup the rs485-to-wifi device. Make sure baud settings match above settings. It is probably wise to assign static ip-address. Take note of this.
+Solar pumps (ZPS) setup
 
-1. Start the add-on.
-2. Have some patience and wait a couple of minutes.
-3. Check the add-on log output to see the result.
+Remove G-422 controller from the casing. Connect the RS485 port on the backside of the G-422 controller to the wifi controller.
 
 ## Add-on configuration:
 All options from grott are available as options in this add-on. They need to follow the naming convention of the environment variables. Eg:  
@@ -27,4 +25,13 @@ All options from grott are available as options in this add-on. They need to fol
 	gmqtttopic: energy/grott
 	gmqttuser: user
 	gmqttpassword: password
+
+MQTT
+Parameter 	Value
+MQTT_ip 	192.168.1.2
+MQTT_port 	1883
+MQTT_authentication 	True
+MQTT_user 	
+MQTT_pass 	
+MQTT_GatewayDevice_Topic 	HewaGate
 ```
