@@ -9,7 +9,7 @@
   "init": "false",
   "boot": "auto",
   "ports" :{
-	"5279/tcp": 5279
+	"8899/tcp": 8899
   },
   "options": {
 	"gmode": "proxy",
