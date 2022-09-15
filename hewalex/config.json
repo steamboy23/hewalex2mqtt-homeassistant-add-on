@@ -20,5 +20,4 @@
 	"gmqtttopic": "hewalex",
 	"gmqttuser": "mqtt",
 	"gmqttpassword": "homeassistant"
-  },
-}
+  }
