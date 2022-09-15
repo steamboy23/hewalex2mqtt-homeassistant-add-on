@@ -21,14 +21,4 @@
 	"gmqttuser": "mqtt",
 	"gmqttpassword": "homeassistant"
   },
-  "schema": {
-	"gnomqtt": "bool?",
-	"gmqttip": "str?",
-	"gmqttport": "str?",
-	"gmqtttopic": "str?",
-	"gmqttauth": "bool?",
-	"gmqttuser": "str?",
-	"gmqttpassword": "password?",
-  }
 }
-
