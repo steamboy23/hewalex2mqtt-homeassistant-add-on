@@ -1,9 +1,9 @@
 {
-  "name": "Grott",
-  "version": "0.2",
-  "slug": "grott",
-  "description": "The Growatt inverter monitor",
-  "url": "https://github.com/johanmeijer/grott",
+  "name": "Hewalex2MQTT",
+  "version": "0.1",
+  "slug": "hewalex",
+  "description": "Hewalex heat pump monitoring",
+  "url": "https://github.com/Chibald/Hewalex2Mqtt",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "init": "false",
@@ -14,10 +14,10 @@
   "options": {
 	"gmode": "proxy",
 	"gnomqtt": "False",
-	"gmqttip": "127.0.0.1",
+	"gmqttip": "192.168.1.5",
 	"gmqttport": "1883",
 	"gmqttauth": "False",
-	"gmqtttopic": "energy/grott",
+	"gmqtttopic": "hewalex",
 	"gmqttuser": "user",
 	"gmqttpassword": "password"
   },
