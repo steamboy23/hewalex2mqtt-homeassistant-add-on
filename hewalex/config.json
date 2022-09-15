@@ -4,20 +4,9 @@
   "slug": "hewalex",
   "description": "Hewalex heat pump monitoring",
   "url": "https://github.com/Chibald/Hewalex2Mqtt",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "arch": ["armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "init": "false",
   "boot": "auto",
-  "ports" :{
-	"8899/tcp": 8899
-  },
-  "options": {
-	"gmode": "proxy",
-	"gnomqtt": "False",
-	"gmqttip": "192.168.1.5",
-	"gmqttport": "1883",
-	"gmqttauth": "False",
-	"gmqtttopic": "hewalex",
-	"gmqttuser": "mqtt",
-	"gmqttpassword": "homeassistant"
-  }
+  "host_network" : "true"
+ }
