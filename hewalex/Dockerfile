@@ -1,5 +1,9 @@
-FROM python:3.7-alpine
-
 RUN pip3 install paho-mqtt===1.5.0 pyserial configparser
+
+COPY  ./hewalex_geco/ ./hewagate/hewalex_geco/
+COPY ./hewalex2mqttconfig.ini ./hewagate/hewalex2mqttconfig.ini
+COPY ./*.py ./hewagate/
+
+RUN ls -la /hewagate/*
 
 ENTRYPOINT [ "python3", "/hewagate/hewalex2mqtt.py" ]
