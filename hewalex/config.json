@@ -1,12 +1,42 @@
 {
   "name": "Hewalex2MQTT",
-  "version": "0.1",
+  "version": "0.1.1",
   "slug": "hewalex",
   "description": "Hewalex heat pump monitoring",
-  "url": "https://github.com/Chibald/Hewalex2Mqtt",
+  "url": "https://github.com/Emacee/hewalex2mqtt-homeassistant-add-on/",
   "arch": ["armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "init": "false",
   "boot": "auto",
-  "host_network" : "true"
- }
+  "host_network": "true",
+  "options": {
+        "mqtt_ip": "192.168.1.5",
+        "mqtt_user": "mqtt",
+        "mqtt_pass": "homeassistant",
+    	"mqtt_port": "1883",
+		"mqtt_authentication": "True",
+    	"Device_Zps_Enabled": "False",
+    	"Device_Zps_Address": "192.168.1.7",
+    	"Device_Zps_Port": "8899",
+		"Device_Zps_MqttTopic": "SolarBoiler",
+    	"Device_Pcwu_Enabled": "True",
+    	"Device_Pcwu_Enabled": "192.168.1.16",
+    	"Device_Pcwu_Port": "8899",
+		"Device_Pcwu_MqttTopic": "Heatpump"
+    },
+  "schema": {
+		"mqtt_ip": "str",
+    	"mqtt_user": "str?",
+    	"mqtt_pass": "str?",
+    	"mqtt_port": "int?",
+		"mqtt_authentication": "bool",
+    	"Device_Zps_Enabled": "bool",
+    	"Device_Zps_Address": "str?",
+    	"Device_Zps_Port": "int?",
+   		"Device_Zps_MqttTopic": "str?",
+    	"Device_Pcwu_Enabled": "bool",
+    	"Device_Pcwu_Enabled": "str?",
+    	"Device_Pcwu_Port": "int?",
+  		"Device_Pcwu_MqttTopic": "str?"
+    }
+}
