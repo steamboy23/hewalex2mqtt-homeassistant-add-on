@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Hewalex2MQTT
+# Home Assistant Add-on: Hewalex2MQTT by lzx
 
 Hewalex devices are equipped with empty RS485 connectors. This is basically a serial port. This script uses a 'serial for url' connection.
 
