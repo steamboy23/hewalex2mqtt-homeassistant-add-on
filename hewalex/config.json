@@ -2,7 +2,7 @@
   "name": "Hewalex2MQTT",
   "version": "0.1.1",
   "slug": "hewalex",
-  "description": "Hewalex heat pump monitoring by lzx",
+  "description": "Hewalex heat pump monitoring by lzx23",
   "url": "https://github.com/steamboy23/hewalex2mqtt-homeassistant-add-on",
   "arch": ["armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
