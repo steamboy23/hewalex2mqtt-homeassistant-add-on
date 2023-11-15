@@ -10,7 +10,7 @@
   "boot": "auto",
   "host_network": "true",
   "options": {
-        "mqtt_ip": "192.168.1.221",
+        "mqtt_ip": "192.168.1.3",
         "mqtt_user": "hewalex",
         "mqtt_pass": "hewalex23",
     	"mqtt_port": "1883",
